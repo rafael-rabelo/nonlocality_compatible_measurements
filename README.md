@@ -10,6 +10,6 @@ The files are:
 Each file contains:
 - Measurements: matlab cell (100x2x4). Entry Measurements{alpha_index,party,index} is a 8x8 matrix, corresponding to the dichotomic observable of the given index, party and alpha index.
 - Measurements_qubit: matlab cell (100x2x4). Entry Measurements_qubit{alpha_index,party,index} is a 2x2 matrix, corresponding to the dichotomic observable of the given index, party and alpha index. Obtained from Measurements by means of suitable partial tracing on the remaining 'parties'.
-- States: matlab cell (100x1). Entry States{alpha_index} is a 8x8 matrix, corresponding to the state of the system for the given alpha index, and associated critical w. The state is a two-qubit state embededded in $C^2 \otimes C^4$, written in the same basis as the measurements, fixed by the tensorial structure $C^4 = C^2 \otimes C^2$ where measurements 1 and 3 of Bob act on the first $C^2$ and measurements 2 and 4 of Bob act on the second $C^2$.
-- alpha: matlab vector (100x1). Entry alpha(alpha_index) returns the value of alpha for the given alpha index.
-- critical_w: matlab vector (100x1). Entry critical_w(alpha_index) returns the critical value of w for the given alpha index.
+- States: matlab cell (100x1). Entry States{alpha_index} is a 8x8 matrix, corresponding to the state of the system for the given alpha index, and associated critical $w$. The state is a two-qubit state embededded in $C^2 \otimes C^4$, written in the same basis as the measurements, fixed by the tensorial structure $C^4 = C^2 \otimes C^2$ where measurements 1 and 3 of Bob act on the first $C^2$ and measurements 2 and 4 of Bob act on the second $C^2$.
+- alpha: matlab vector (100x1). Entry alpha(alpha_index) returns the value of $\alpha$ for the given alpha index.
+- critical_w: matlab vector (100x1). Entry critical_w(alpha_index) returns the critical value of $w$ for the given alpha index.
